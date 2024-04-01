@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>KALKULATOR ADIT</title>
+	<link rel="stylesheet" href="calcu.css"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+<!--
+.style2 {
+	font-family: Georgia, "Times New Roman", Times, serif
+}
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+-->
+    </style>
+</head> 
+<body>
+        <div class="container">
+            <center class="style2"> 
+              <h2 class="style4">KALKULATOR</h2>
+          </center>
+<div class="display">
+              <input id="screen" type="text" placeholder="0">
+            <span class="row"><img src="logooA.png" width="90" height="66"></span></div>
+
+      <div class="btns">
+                <div class="row">
+                    <button  id="ce" onClick="backspc()">CE</button>
+                    <button style=background-color:ff99ff onClick="fact()">x!</button>
+                  <button style=background-color:ff99ff class="btn">(</button>
+                    <button style=background-color:ff99ff class="btn">)</button>
+                    <button style=background-color:ff99ff class="btn">%</button>
+                    <button id="ac" onClick="screen.value=''">AC</button>
+                </div>
+
+                <div class="row">
+                    <button onClick="sin()">sin</button>
+                    <button onClick="pi()">π</button>
+                    <button style=background-color:99ffff class="btn">7</button>
+                    <button style=background-color:99ffff class="btn">8</button>
+                    <button style=background-color:99ffff class="btn">9</button>
+                    <button style=background-color:ff99ff class="btn">÷</button>
+                </div>
+
+                <div class="row">
+                    <button onClick="cos()">cos</button>
+                    <button onClick="log()">log</button>
+                    <button style=background-color:99ffff class="btn">4</button>
+                    <button style=background-color:99ffff class="btn">5</button>
+                    <button style=background-color:99ffff class="btn">6</button>
+                    <button style=background-color:ff99ff class="btn">×</button>
+                </div>
+
+                <div class="row">
+                    <button onClick="tan()">tan</button>
+                    <button onClick="sqrt()">√</button>
+                    <button style=background-color:99ffff class="btn">1</button>
+                    <button style=background-color:99ffff class="btn">2</button>
+                    <button style=background-color:99ffff class="btn">3</button>
+                    <button style=background-color:ff99ff class="btn">-</button>
+                </div>
+
+                <div class="row">
+                    <button onClick="e()">e</button>
+                    <button onClick="pow()">x<span style="position: relative; bottom: .4em; right: .1em;">y</span> </button>
+                    <button class="btn">.</button>
+                    <button style=background-color:99ffff class="btn">0</button>
+                    <button id="eval" onClick="screen.value=eval(screen.value.replaceAll('%','*0.01'))">=</button>
+                    <button style=background-color:ff99ff class="btn">+</button>
+                    
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="calcu.js"></script>
+</body>

@@ -1,0 +1,104 @@
+body {
+	padding: ;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	user-select: none;
+	background-image: url('dit.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1400px 800px;
+	}
+
+    .container 
+    {   margin-left: 1.8em;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 13px 13px 20px cyan,
+                  -13px -13px 20px white; 
+}
+content{
+	width: 100%
+	margin-top: 1.7em;
+	display: flex;
+  justify-content: center;
+  flex-direction: column;
+    }
+
+    .row button 
+    {
+        width: 64px;
+        height: 64px;
+        font-size: 20px;
+        border: 0;
+        outline: none;
+        margin: 5px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: 5px 5px 8px white,
+                   -5px -5px 8px cyan;
+   }
+ button{
+        height: 60px
+        width: 60px;
+        border: 0;
+        border-radius: 30px;
+        margin: 5px;
+        font-size: 20px
+        cursor: pointer;
+        transition: all 200ms ease;  
+         }
+    .row button:hover 
+    {
+        box-shadow:  inset 5px 5px 8px rgba(16, 16, 16, .1),
+                     inset -5px -5px 8px #fff;
+        background: silver;  /*WARNA SOROTAN*/
+    }
+
+    .display #screen 
+    {
+        margin-bottom: .5em;
+        width: auto;
+        height: 70px;
+        font-size: 35px;
+        outline: none;
+        border: none;
+        text-align: right;
+        padding-right: .5em;
+        background: white;
+        border-radius: 15px;
+        box-shadow: inset 8px 8px 8px silver,
+                    inset -8px -8px 8px #ffffff;
+    }
+    #eval 
+    {
+        background: #33ccff;
+        color: #fff;
+        box-shadow: inset 5px 5px 8px #66d9ff,
+                    inset -5px -5px 8px #00ace6;
+    }
+
+    #eval:hover 
+    {
+        box-shadow: inset 5px 5px 8px #00ace6,
+                    inset -5px -5px 8px #00ace6;
+    }
+
+    #ac 
+    {
+        background: #33ccff;
+        color: #fff;
+    }
+#ce 
+    {
+        background: #ffcc99;
+        color: #fff;
+    }
+
+    #ce:hover 
+    {
+          box-shadow: inset 5px 5px 8px black,
+                      inset -5px -5px 8px #ff3399;
+    }
